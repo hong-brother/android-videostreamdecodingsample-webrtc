@@ -33,7 +33,11 @@
         android:label="@string/app_name_decoding_sample"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!-- seems to be required for DJI and Android >= 9 -->
+
+        <!-- DJI is still using the outdated org.apache.http -->
+        <!-- The following line makes it run on Android >= 9 -->
+        <!-- see https://developer.android.com/about/versions/pie/android-9.0-changes-28  -->
+        
         <uses-library android:name="org.apache.http.legacy" android:required="false" />
 
         <meta-data
