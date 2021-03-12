@@ -58,7 +58,7 @@
                 android:resource="@xml/accessory_filter"/>
         </activity>
         <activity android:name=".MainActivity"
-            android:screenOrientation="landscape"
+            android:screenOrientation="sensorLandscape"
             android:configChanges="orientation|screenSize"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
     </application>

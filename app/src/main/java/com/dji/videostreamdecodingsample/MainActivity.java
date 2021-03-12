@@ -86,11 +86,8 @@ public class MainActivity extends Activity implements  StreamerEvents {
                 .setLicenseKey("your-djistreamerlib-license-key-here")  // MANDATORY
                 .setSurfaceView(mSurfaceView)                           // OPTIONAL
                 .setYuvFormat(StreamerConfig.FORMAT_I420)               // OPTIONAL, FORMAT_I420 is default
-                .setYuvWidth(1280)                                      // OPTIONAL, 1280 is default
-                .setYuvHeight(720)                                      // OPTIONAL, 720 is default
                 .setVideoWidth(1280)                                    // OPTIONAL, 800 is default, must not be bigger than YuvWidth
                 .setVideoHeight(720)                                    // OPTIONAL, 600 is default, must not be bigger than YuvHeight
-
                 .build();
         try {
             mStreamerLib = new StreamerLib(MainActivity.this, config);

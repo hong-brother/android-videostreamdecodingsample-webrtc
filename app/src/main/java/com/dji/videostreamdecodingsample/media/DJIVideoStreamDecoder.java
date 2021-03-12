@@ -788,7 +788,7 @@ public class DJIVideoStreamDecoder implements NativeHelper.NativeDataListener {
                     yuvDataBuf.position(bufferInfo.offset);
                     yuvDataBuf.limit(bufferInfo.size - bufferInfo.offset);
                     if (yuvDataListener != null) {
-                        yuvDataListener.onYuvDataReceived(null /* hack */, yuvDataBuf, bufferInfo.size - bufferInfo.offset,  width, height);
+                        yuvDataListener.onYuvDataReceived(codec.getOutputFormat(), yuvDataBuf, bufferInfo.size - bufferInfo.offset,  width, height);
                     }
                 }
                 // All the output buffer must be release no matter whether the yuv data is output or

@@ -28,14 +28,13 @@ On `Start` the app immediately begins to obtain H.264 from the drone's camera an
 
 You can hangup and call again from remote, but once you hit `Stop`, the library respectively the Android app  will not respond to calls anymore, until the next `Start` happens.
 
-In case the colors displayed look weird, play a bit with the `StreamerConfig.setYuvFormat()` function. DJI has several variants of YUV 4:2:0 on the market. If the app reports an error regarding the Width/Height, you can manipulate the displayable width and height up to 2000 * 2000 using the `StreamerConfig.setYuvWidth()` and `StreamerConfig.setYuvHeight()` functions.
+In case the colors displayed look weird, play a bit with the `StreamerConfig.setYuvFormat()` function. 
 
 For details for the API provided by the DJI Streamer Lib please refer to the [DJI Streamer Lib](https://github.com/neilyoung/djistreamerlib).
 
 ## What are you supposed to do?
 
 - Clone this repository and open it in Android Studio.
-- Don't update the `gradle` version for this project if you are asked. Since - according to the DJI developer support - the original project cannot be compiled and run with `targetSdkVersion` > 27 and `buildToolsVersion` > 27.x.x it makes no sense to upgrade.
 - Provide your DJI SDK key in `AndroidManifest.xml`. The place is marked. 
 - Provide your DJI Streamer Lib credential tuple in `MainActivity.java`. The place is marked.
 - Compile and install the app on your Android device, which is connected to the Remote Control of the drone via USB. It goes without saying, that all connected devices should be powered up. **You cannot run this app on an emulator**.
