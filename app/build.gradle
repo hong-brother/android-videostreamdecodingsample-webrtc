@@ -90,7 +90,7 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.0.0'
 
     // DJIStreamerLib
-    implementation 'com.decades.android:djistreamerlib:1.1.1'
+    implementation 'com.decades.android:djistreamerlib:1.2.0'
 
 }
 
