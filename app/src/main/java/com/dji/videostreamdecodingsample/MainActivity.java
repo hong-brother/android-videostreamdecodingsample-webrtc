@@ -96,6 +96,7 @@ public class MainActivity extends Activity implements  StreamerEvents {
             mSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 
         } catch (Exception e) {
+            showToast("Exception "+e.toString());
             e.printStackTrace();
         }
 
